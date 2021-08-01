@@ -11,6 +11,7 @@ terraform {
 
 resource "google_compute_address" "static" {
   name = "ipv4-address-${var.environment}"
+  region = europe-west2
 }
 
 variable "project" {}
